@@ -13,6 +13,7 @@
 		ED0D9336227C98F500C117B7 /* PaypalPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0D9335227C98F500C117B7 /* PaypalPaymentService.m */; };
 		ED0D9339227C98FE00C117B7 /* AmazonPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0D9338227C98FE00C117B7 /* AmazonPaymentService.m */; };
 		ED0D933C227C990E00C117B7 /* StripePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0D933B227C990E00C117B7 /* StripePaymentService.m */; };
+		ED0D933F227CA28200C117B7 /* ApplePayService.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0D933E227CA28200C117B7 /* ApplePayService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		ED0D9338227C98FE00C117B7 /* AmazonPaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazonPaymentService.m; sourceTree = "<group>"; };
 		ED0D933A227C990E00C117B7 /* StripePaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StripePaymentService.h; sourceTree = "<group>"; };
 		ED0D933B227C990E00C117B7 /* StripePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StripePaymentService.m; sourceTree = "<group>"; };
+		ED0D933D227CA28200C117B7 /* ApplePayService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplePayService.h; sourceTree = "<group>"; };
+		ED0D933E227CA28200C117B7 /* ApplePayService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePayService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 				ED0D9338227C98FE00C117B7 /* AmazonPaymentService.m */,
 				ED0D933A227C990E00C117B7 /* StripePaymentService.h */,
 				ED0D933B227C990E00C117B7 /* StripePaymentService.m */,
+				ED0D933D227CA28200C117B7 /* ApplePayService.h */,
+				ED0D933E227CA28200C117B7 /* ApplePayService.m */,
 				ED0D9331227C96A600C117B7 /* PaymentGateway.h */,
 				ED0D9332227C96A600C117B7 /* PaymentGateway.m */,
 				ED0D932E227C72F800C117B7 /* InputHandler.h */,
@@ -148,6 +153,7 @@
 				ED0D9339227C98FE00C117B7 /* AmazonPaymentService.m in Sources */,
 				ED0D9328227C724700C117B7 /* main.m in Sources */,
 				ED0D9330227C72F800C117B7 /* InputHandler.m in Sources */,
+				ED0D933F227CA28200C117B7 /* ApplePayService.m in Sources */,
 				ED0D9336227C98F500C117B7 /* PaypalPaymentService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

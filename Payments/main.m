@@ -12,6 +12,7 @@
 #import "PaypalPaymentService.h"
 #import "AmazonPaymentService.h"
 #import "StripePaymentService.h"
+#import "ApplePayService.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -22,9 +23,9 @@ int main(int argc, const char * argv[]) {
         PaypalPaymentService* paypal = [PaypalPaymentService new];
         AmazonPaymentService* amazon = [AmazonPaymentService new];
         StripePaymentService* stripe = [StripePaymentService new];
+        ApplePayService* applepay = [ApplePayService new];
         
-        
-        NSLog(@"Thank you for shopping at Acme.com. Your total is $%ld please select your payment method: 1: Paypal, 2: Strip, 3: Amazon",(long)balance);
+        NSLog(@"Thank you for shopping at Acme.com. Your total is $%ld please select your payment method: 1: Paypal, 2: Strip, 3: Amazon 4: ApplePay",(long)balance);
         
         NSInteger userInput = [inputHandler parsedInput];
         switch (userInput) {
@@ -38,6 +39,10 @@ int main(int argc, const char * argv[]) {
                 break;
             case 3:
                 payment.paymentDelegate = amazon;
+                [payment processPaymentAmount:balance];
+                break;
+            case 4:
+                payment.paymentDelegate = applepay;
                 [payment processPaymentAmount:balance];
                 break;
                 
