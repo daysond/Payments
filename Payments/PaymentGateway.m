@@ -12,7 +12,12 @@
 
 - (void)processPaymentAmount:(NSInteger)balance {
     
-    [self.paymentDelegate processPaymentAmount:balance];
+    if([self.paymentDelegate canProcessPayment]){
+        [self.paymentDelegate processPaymentAmount:balance];
+    } else {
+        NSLog(@"Payment was not processed.");
+    }
+
 
     
 }
